@@ -1,0 +1,831 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+  font-family: 'Open Sans';
+}
+body {
+  height: auto!important;
+}
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+	opacity: 0;
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#header{
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav{
+  height: 5px;
+}
+#progress{
+  height: 5px;
+}
+
+#scrollmark{
+  width: 25px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+}
+
+#scroll{
+  width: 25px;
+}
+
+#notice{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  text-align: center;
+	position: relative;
+}
+
+
+
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../img/m1.png')}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../img/m2.png')}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../img/m3.png')}
+
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('../img/m4.png')}
+/* Slide 5 */
+  #slide-5 .bcg {background-image:url('../img/m5.png')}
+/* Slide 6 */
+  #slide-6 .bcg {background-image:url('../img/m6.png')}
+/* Slide 7 */
+  #slide-7 .bcg {background-image:url('../img/m7.png')}
+/* Slide 8 */
+  #slide-8 .bcg {background-image:url('../img/m8.png')}
+  #slide-6 .hsContainer{
+    display: block;
+    text-align: center;
+  }
+  #slide-6 a{
+    display: inline-block;
+    padding: 0;
+    margin-top: 600px;
+    text-decoration: none;
+  }
+  #slide-6 .hsContent{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+  }
+  #startbutton{
+    font-size: 15px;
+    font-family: "Open Sans", serif;
+    font-weight: normal;
+    color: rgba(235, 86, 100, 1);
+    border: 1px rgba(235, 86, 100, 0.8) solid;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+  }
+
+  #startbutton:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(235, 86, 100, 0.4);
+    border: 1px rgba(255, 255, 255, 0.8) solid;
+  }
+
+/*--------------BASE-----------------*/
+body{
+  background-image: url(../img/theme.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header{
+  width: 100%;
+  height: 60px;
+  border: 1px rgba(255, 255, 255, 0.5) dashed;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+#logocontainer{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+}
+#logo{
+  width: 60px;
+  vertical-align: bottom;
+}
+h1{
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rockwell","Palatino", serif;
+  /*width: 100%;*/
+  /*text-align: center;*/
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  color: rgba(240, 2, 99, 0.8);
+
+}
+
+h2{
+  font-size: 32px;
+  text-align: center;
+  color: rgba(240, 2, 99, 0.8);;
+  font-family: "Rockwell","Palatino", serif;
+}
+
+h3{
+  font-size: 22px;
+  text-align: center;
+  color: rgba(240, 2, 99, 0.8);;
+  font-family: "Rockwell","Palatino", serif;
+  margin: 0;
+  padding-top: 100px;
+}
+
+nav{
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  border: 1px black solid;
+  float: right;
+}
+
+footer{
+  width: 100%;
+  height: 80px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px rgba(255, 255, 255, 0.5) dashed;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*--------------LOG IN-----------------*/
+#login header{
+  opacity: 0;
+}
+
+#login h2{
+  padding-top: 80px;
+}
+
+
+#loginform{
+  width: 90%;
+  /*max-width: 400px;*/
+  height: auto;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#loginform fieldset{
+  margin-top: 10px;
+}
+
+legend{
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+label{
+  font-size: 14px;
+  color:rgba(0, 0, 0, 0.5);
+  /*color: rgba(240, 2, 99, 0.6);*/
+  margin-bottom: 10px;
+}
+
+form.container{
+  width: 100%;
+}
+
+#logincontainer{
+  /*text-align: center;*/
+}
+
+.textinput{
+  margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder, :-moz-placeholder {
+font-size: 12px;;
+}
+
+#loginbutton{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#loginsubmit{
+  width: 80px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  background-color: rgba(240, 2, 99, 0.8);
+  border-radius: 8px;
+}
+
+#loginsubmit:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(235, 86, 100, 1);
+  border-radius: 8px;
+}
+
+#loginform p{
+  font-size: 14px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#logtosign a{
+  color: rgba(107, 45, 92, 1);
+  text-decoration: underline;
+}
+#logtosign a:hover{
+  color: rgba(248, 45, 92, 1);
+  text-decoration: underline;
+}
+
+/*--------------SIGN UP-----------------*/
+/*#signup h3{
+  padding-top: 80px;
+}*/
+
+
+#signupform{
+  width: 90%;
+  /*max-width: 400px;*/
+  font-size: 14px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#signupform fieldset{
+  margin-top: 10px;
+}
+
+#signupform label{
+  padding-left: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.divider{
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  border-bottom: 2px rgba(235, 86, 100, 0.5) dashed;
+}
+
+#signupform span{
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding-left: 0;
+  position: relative;
+  bottom:0;
+}
+
+option{
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+
+option::selection{
+  background-color: rgba(235, 86, 100, 0.5);
+}
+
+textarea{
+  margin-bottom: 10px;
+}
+
+#signupbutton{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#signupsubmit{
+  width: 80px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  background-color: rgba(240, 2, 99, 0.8);
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#signupphoto:hover{
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(235, 86, 100, 1);
+  border-radius: 2px;
+  border:0px ;
+}
+
+#signupsubmit:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(235, 86, 100, 1);
+  border-radius: 8px;
+}
+
+.errormessage{
+  color: rgba(240, 2, 99, 0.8);
+}
+
+/*--------------Profile-----------------*/
+#profile{
+  padding-top: 100px;
+}
+#profile h3{
+  padding-top: 20px;
+}
+#profilephoto{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px white solid;
+  border-radius: 100px;
+  overflow: hidden;
+}
+#profilephoto img{
+  width: 200px;
+}
+#profileinfo{
+  width: 90%;
+  max-width: 500px;
+  font-size: 14px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.profilecontent{
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.labelfor{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#profileform{
+  width: 90%;
+  max-width: 500px;
+  font-size: 14px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#profileform fieldset{
+  margin-top: 10px;
+}
+
+#profileform label{
+  padding-left: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#profileform legend{
+  color: rgba(240, 2, 99, 0.8);
+  font-weight: normal;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#profilebutton{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#profilesubmit{
+  width: 80px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  background-color: rgba(240, 2, 99, 0.8);
+  border-radius: 8px;
+}
+
+#profilesubmit:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(235, 86, 100, 1);
+  border-radius: 8px;
+}
+
+/*--------------Encounter-----------------*/
+
+.buttoncontainer{
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+button{
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  background-color: rgba(240, 2, 99, 0.8);
+  border-radius: 8px;
+}
+
+.encounterphoto{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border: 10px rgba(240, 2, 99, 0.5) solid;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.encounterphoto img{
+  width: 300px;
+}
+
+h4{
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+h4 a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px white dashed;
+}
+
+h4 a:hover{
+  color: rgba(240, 2, 99, 0.8);
+  text-decoration: none;
+  border-bottom: 1px rgba(240, 2, 99, 0.8) dashed;
+}
+
+.userthumb{
+  display: none;
+}
+
+#holder{
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 500px) {
+  #loginform{
+    width: 60%;
+    max-width: 400px;
+}
+
+#signupform{
+  width: 60%;
+  min-width: 450px;
+  max-width: 600px;
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media only screen and (min-width: 765px) {
+    .container{
+      width: 100%;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Serendipity</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!--Fonts-->
+      	<link rel="stylesheet" href="../static/font/font-awesome-4.1.0/css/font-awesome.min.css">
+      	<link rel="stylesheet" href="../static/font/open-sans/stylesheet.css">
+
+        <!--Site Logo-->
+      	<link rel="icon" href="../static/img/logo.png" type="image/x-icon" >
+      	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo.png">
+      	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo.png">
+      	<link rel="apple-touch-icon-precomposed" href="img/logo.png">
+
+        <!-- Bootstrap Latest compiled and minified CSS -->
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="../static/css/normalize.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <script src="../static/js/vendor/modernizr-2.7.1.min.js"></script>
+
+    </head>
+    <body id="signup">
+
+        <header>
+          <div id="logocontainer">
+            <img id="logo" src="../static/img/logo.png">
+          </div>
+          <h1>Serendipity</h1>
+          <nav>
+
+          </nav>
+
+        </header>
+
+        <h3>Join us</h3>
+        <section id="signupform">
+          <form action='#' method = 'post'>
+        			<fieldset>
+        				<!-- <legend>LOG IN</legend> -->
+                  <div class="container" id="signupcontainer">
+                    <div class="row">
+          						<label for='signupemail' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Email:</label>
+          						<input type='email' id = 'signupemail' name = 'signupemail' placeholder="test@test.edu" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
+          						<label for='signuppassword' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Password:</label>
+          						<input type='text' id='signuppassword' name = 'signuppassword' placeholder="password123" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
+                      <label for='signuprepassword' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Repeat Password:</label>
+          						<input type='text' id='signuprepassword' name = 'signuprepassword' placeholder="password123" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
+                    </div>
+                  </div>
+              </fieldset>
+              <div class="divider"></div>
+              <fieldset>
+        				<!-- <legend>Personal Information</legend> -->
+                  <div class="container" id="signupcontainer2">
+                    <div class="row">
+                      <label for='signupfirstname' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">First Name:</label>
+          						<input type='text' id='signupfirstname' name = 'signupfirstname' placeholder="Harvey" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
+                      <label for='signuplastname' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Last Name:</label>
+          						<input type='text' id='signuplastname' name = 'signuplastname' placeholder="Spector" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
+                      <label for='signupage' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Age:</label>
+          						<input type='text' id='signupage' name = 'signupage' placeholder="46" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
+                      <label for='signupgender' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Gender: </label>
+                      <span class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <input type='radio' id='signupmale' name='signupgender' value='male'> Male
+                      </span>
+                      <span class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <input type='radio' id='signupfemale' name='signupgender' value='femal'> Female
+                      </span><br/>
+
+                      <label for='signupstatus' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Relationship: </label>
+                      <span class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <input type='radio' id='signupsingle' name='signupstatus' value='single'> Single
+                      </span>
+                      <span class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <input type='radio' id='signupcouple' name='signupstatus' value='couple'> In Realationship
+                      </span><br/>
+
+                      <label for='signupcountry' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Country: </label>
+                      <select multiple name='signupcountry' class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput">
+                        <option value="us">United States</option>
+                        <option value="china">China</option>
+                        <option value="japan">Japan</option>
+                        <option value="other">Other</option>
+                      </select><br/>
+                      <label for='signupintro' class="col-xs-12 col-sm-12 col-md-4 col-lg-12">Self-introduction: </label><br/>
+                      <textarea id = 'signupintro' name = 'signupintro' placeholder="I don't pave the way for people. People pave the way for me." class="col-xs-12 col-sm-12 col-md-4 col-lg-12"></textarea><br/>
+
+                      <label for='signupphoto' class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Upload Your Photo:</label>
+          						<input type='button' id='signupphoto' name = 'signupphoto' class="col-xs-6 col-sm-6 col-md-6 col-lg-6 textinput" value="Choose Your Photo"><br/>
+
+                    </div>
+                  </div>
+                  <div id="signupbutton"><input type = 'submit' id="signupsubmit" value="SUBMIT"></div>
+        			</fieldset>
+        	</form>
+          <p class="errormessage">error message</p>
+        </section>
+
+
+
+        <footer>
+          <p class="copyright">All rights reserved. | Victor &amp; Ruofan &#169; 2015</p>
+        </footer>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../static/js/imagesloaded.js"></script>
+        <script src="../static/js/skrollr.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+        <script src="../static/js/_main.js"></script>
+
+    </body>
+</html>
