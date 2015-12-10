@@ -62,7 +62,7 @@
         				<!-- <legend>Personal Information</legend> -->
                   <div class="container" id="signupcontainer2">
                     <div class="row">
-                      <label for='signupfirstname' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">First Name:</label>
+                      <label for='signupfirstname' class="col-xs-4 col-sm-4 col-md-4 col-lg-4" required>First Name:</label>
           						<input type='text' id='signupfirstname' name = 'signupfirstname' placeholder="Harvey" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
                       <label for='signuplastname' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Last Name:</label>
           						<input type='text' id='signuplastname' name = 'signuplastname' placeholder="Spector" class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
@@ -85,7 +85,7 @@
                       </span><br/>
 
                       <label for='signupcountry' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Country: </label>
-                      <select multiple name='signupcountry' class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput">
+                      <select multiple name='signupcountry' class="col-xs-4 col-sm-4 col-md-4 col-lg-4 textinput">
                         <option value="us">United States</option>
                         <option value="china">China</option>
                         <option value="japan">Japan</option>
@@ -94,8 +94,8 @@
                       <label for='signupintro' class="col-xs-12 col-sm-12 col-md-4 col-lg-12">Self-introduction: </label><br/>
                       <textarea id = 'signupintro' name = 'signupintro' placeholder="I don't pave the way for people. People pave the way for me." class="col-xs-12 col-sm-12 col-md-4 col-lg-12"></textarea><br/>
 
-                      <label for='signupphoto' class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Upload Your Photo:</label>
-          						<input type='button' id='signupphoto' name = 'signupphoto' class="col-xs-6 col-sm-6 col-md-6 col-lg-6 textinput" value="Choose Your Photo"><br/>
+                      <label for='signupphoto' class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Upload Your Photo:</label>
+          						<input type='file' id='signupphoto' name = 'signupphoto' class="col-xs-8 col-sm-8 col-md-8 col-lg-8 textinput"><br/>
 
                     </div>
                   </div>

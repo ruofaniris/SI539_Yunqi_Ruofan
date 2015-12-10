@@ -43,37 +43,37 @@
 
         </header>
 
-        <div id="profilephoto"><img src="../static/img/user.jpg"></div>
+        <div id="profilephoto"><img src="{{photo}}"></div>
         <h3>Harvey Specter</h3>
         <section id="profileinfo">
           <div class="container">
             <div class="row">
           			<div class="profilecontent">
                   <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Age:</span>
-                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">46</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{age}}</span>
           			</div>
                 <div class="profilecontent">
                   <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Gender:</span>
-                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">Male</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{gender}}</span>
           			</div>
                 <div class="profilecontent">
                   <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Country:</span>
-                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">United States</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{country}}</span>
           			</div>
                 <div class="profilecontent">
                   <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Relationship Status:</span>
-                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">Single</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{status}}</span>
           			</div>
                 <div class="profilecontent">
                   <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Self-introduction:</span>
-                  <span id="profileselfintro" class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">I don't pave the way for people. People pave the way for me.</span>
+                  <span id="profileselfintro" class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{intro}}</span>
           			</div>
             </div>
           </div>
 
         </section>
 
-        <section id="profileform">
+        <!-- <section id="profileform">
           <form action='#' method = 'post'>
         			<fieldset>
         				<legend>Leave a message</legend>
@@ -89,7 +89,7 @@
                   <div id="profilebutton"><input type = 'submit' id="profilesubmit" value="SEND"></div>
         			</fieldset>
         	</form>
-        </section>
+        </section> -->
 
 
 

@@ -450,12 +450,12 @@ textarea{
   font-family: "Open Sans", sans-serif;
 }
 
-#signupphoto:hover{
+/*#signupphoto:hover{
   background-color: rgba(255, 255, 255, 1);
   color: rgba(235, 86, 100, 1);
   border-radius: 2px;
   border:0px ;
-}
+}*/
 
 #signupsubmit:hover{
   color: rgba(255, 255, 255, 1);
@@ -625,6 +625,45 @@ h4 a:hover{
 #holder{
   opacity: 0;
 }
+
+/*--------------Error Page-----------------*/
+#errorpage{
+  text-align:center;
+  background-image: url(../img/theme.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#errorpage p{
+  font-size: 18px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+#errorpage h6{
+  font-size: 30px;
+  color: rgba(240, 2, 99, 0.6);
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+#errorpage span{
+  color: rgba(240, 2, 99, 1);
+  border-bottom: 2px rgba(240, 2, 99, 1) dashed;
+}
+
+#errorpage a{
+  color: inherit;
+  text-decoration: none;
+}
+
+#errorpage span:hover{
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px rgba(255, 255, 255, 0.8) dashed;
+}
+
 
 /* ==========================================================================
    Helper classes

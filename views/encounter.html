@@ -46,7 +46,7 @@
           </a>
           <nav>
             <ul>
-              <li><></li>
+              <li></li>
               <li></li>
               <li></li>
             </ul>
@@ -58,13 +58,22 @@
         <div class="buttoncontainer"><button id="firstclick" onclick="changeuser()">Go!</button></div>
 
         <section id="holder">
-          <h4><a href="#">Place Holder</a></h4>
+          <h4><a href="#" id="usercount">Place Holder {{useramount}}</a></h4>
           <div class="encounterphoto">
             <img src="../static/img/user.jpg" />
           </div>
         </section>
 
-        <section id="user1" class="userthumb">
+        {% for user in users %}
+          <section id="user{{user.id}}" class="userthumb">
+            <h4 id="username{{user.id}}"><a href="profile?profilefirstname={{user.firstname}}&profilelastname={{user.lastname}}">{{user.firstname}} {{user.lastname}}</a></h4>
+            <div class="encounterphoto">
+              <img id="userphoto{{user.id}}" src="{{user.photourl}}" />
+            </div>
+          </section>
+        {% end for %}
+
+        <!-- <section id="user1" class="userthumb">
           <h4 id="username1"><a href="#">Harvey Specter</a></h4>
           <div class="encounterphoto">
             <img id="userphoto1" src="../static/img/user.jpg" />
@@ -90,7 +99,7 @@
           <div class="encounterphoto">
             <img id="userphoto4" src="../static/img/4.jpg" />
           </div>
-        </section>
+        </section> -->
 
 
         <footer>
@@ -112,7 +121,7 @@
         <script type="text/javascript">
         function changeuser(){
           var rand;
-          var max=4;
+          var max= {{useramount}};
           var min=0;
           var i=1;
           rand = Math.ceil(Math.random()*(max-min)+min);
