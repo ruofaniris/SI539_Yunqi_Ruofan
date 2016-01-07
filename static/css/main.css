@@ -262,10 +262,118 @@ h3{
 
 nav{
   display: inline-block;
-  width: 100px;
+  width: 220px;
   height: 60px;
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0;
+  margin-right:15px;
+  line-height: 60px;
+  vertical-align: top;
+}
+
+nav a{
+  color: rgba(240, 2, 99, 1);
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: white;
+  border-bottom: 1px white dashed;
+  text-decoration: none;
+}
+
+#navimg{
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  border:1px rgba(240, 2, 99, 0.5) solid;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#navimg:hover{
+  border: 1px white dashed;
+}
+
+nav img{
+  width: 50px;
+}
+
+.current{
+  color: white!important;
+  border-bottom: 1px white solid;
+}
+
+#full{
+  display: none;
+}
+
+#mobile{
+  width: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#mobile button{
+  color:rgba(240, 2, 99, 0.5);
+  border: 1px rgba(240, 2, 99, 0.5) solid;
+  background-color: rgba(255, 0, 0, 0);;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+#mobile button:hover{
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.dropdown{
+  width: 40px;
+  position: relative;
+}
+
+.dropdown-menu{
+  width: 100px;
+  min-width: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 10px;
+  text-align: center;
+  position: absolute;
+  left: -40px;
+}
+
+.dropdown-menu li{
+  display: inline-block;
+  height: 30px;
+  margin-right: 0;
+}
+
+.dropdown-menu li a{
+
+  color: rgba(240, 2, 99, 1);
+  font-size: 14px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dropdown-menu li a:hover{
+  color: white;
+  background-color: inherit;
+  border-bottom: 1px white dashed;
+  text-decoration: none;
 }
 
 footer{
@@ -277,6 +385,18 @@ footer{
   border: 1px rgba(255, 255, 255, 0.5) dashed;
   text-align: center;
   margin-top: 20px;
+}
+
+footer a{
+  color: rgba(240, 2, 99, 1);
+  font-size: 14px;
+  border-bottom: 1px rgba(240, 2, 99, 1) dashed;
+}
+
+footer a:hover{
+  color: white;
+  border-bottom: 1px white solid;
+  text-decoration: none;
 }
 
 /*--------------LOG IN-----------------*/
@@ -353,9 +473,9 @@ font-size: 12px;;
 }
 
 #loginsubmit:hover{
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(235, 86, 100, 1);
-  border-radius: 8px;
+  color: rgba(240, 2, 99, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px rgba(240, 2, 99, 0.5) solid;
 }
 
 #loginform p{
@@ -404,7 +524,7 @@ font-size: 12px;;
 .divider{
   width: 96%;
   margin-left: 2%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 12px;
   border-bottom: 2px rgba(235, 86, 100, 0.5) dashed;
 }
@@ -458,13 +578,16 @@ textarea{
 }*/
 
 #signupsubmit:hover{
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(235, 86, 100, 1);
-  border-radius: 8px;
+  color: rgba(240, 2, 99, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px rgba(240, 2, 99, 0.5) solid;
 }
 
 .errormessage{
+  margin: 0;
+  padding-right: 0;
   color: rgba(240, 2, 99, 0.8);
+  text-align: right;
 }
 
 /*--------------Profile-----------------*/
@@ -583,6 +706,12 @@ button{
   border-radius: 8px;
 }
 
+button:hover{
+  color: rgba(240, 2, 99, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px rgba(240, 2, 99, 0.5) solid;
+}
+
 .encounterphoto{
   width: 300px;
   height: 300px;
@@ -664,7 +793,23 @@ h4 a:hover{
   border-bottom: 2px rgba(255, 255, 255, 0.8) dashed;
 }
 
+/*---------us-----------*/
+.fc-slideshow{
+  width: 300px;
+  height: 300px;
+}
+.fc-slideshow img{
+  width: 300px!important;
+}
 
+#us .main{
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+#us header nav{
+  display: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -782,6 +927,14 @@ h4 a:hover{
   width: 60%;
   min-width: 450px;
   max-width: 600px;
+}
+
+#full{
+  display: block;
+}
+
+#mobile{
+  display: none;
 }
 
 @media print,

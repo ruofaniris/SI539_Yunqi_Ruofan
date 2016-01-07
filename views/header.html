@@ -1,0 +1,43 @@
+        <header
+        {% if name == "login" %}
+          class="hidden"
+        {% endif %}>
+          <a href="index">
+          <div id="logocontainer">
+            <img id="logo" src="../static/img/logo.png">
+          </div>
+          <h1>Serendipity</h1>
+          </a>
+          <nav id="full"
+          {% if name == "signup" %}
+            class="hidden"
+          {% endif %}>
+            <ul>
+              <li><a href="profile"><div id="navimg"><img src="{{photome}}"></div></a></li>
+              <li><a href="encounter"
+                {% if name == "encounter" %}
+      						class="current"
+      					{% endif %}>Encounter</a></li>
+              <li><a href="login">Log out</a></li>
+            </ul>
+          </nav>
+
+          <nav id="mobile">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          			<i class="fa fa-bars fa-2x"></i>
+        			</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="profile"
+                  {% if name == "profile" %}
+        						class="current"
+        					{% endif %}>Profile</a></li>
+                <li><a href="encounter"
+                  {% if name == "encounter" %}
+        						class="current"
+        					{% endif %}>Encounter</a></li>
+                <li><a href="login">Log out</a></li>
+              </ul>
+          </nav>
+
+        </header>

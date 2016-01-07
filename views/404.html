@@ -36,7 +36,12 @@
         </header> -->
         <div id="skrollr-body">
 
-          <p>Where am I? Scroll down for details</p>
+          <p>{{errormessage}}</p>
+          <p
+          {% if name != "loginfail" %}
+            class="hidden"
+          {% endif %}
+          ><a href="login">Back to log in again.</a><p>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600px" height="900px">
             <path
               style="fill:none;stroke:rgba(0,0,0,0.6);stroke-width:7;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6000;stroke-dashoffset:0"
@@ -49,7 +54,7 @@
 	s74-81,74-81s-45,75.1-21,81s82-67,79-77s-38,66.8-27,77.4"
     />
           </svg>
-          <h6>Let‘s meet <span><a href="index.html">SERENDIPITY</a></span>.</h6>
+          <h6>Let‘s meet <span><a href="{{url_for('index')}}">SERENDIPITY</a></span>.</h6>
 
         </div>
 
