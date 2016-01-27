@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+  {% block bodyinfo%}
+    <body id="us">
+  {% endblock%}
+  {% block content%}
+        <h3>About us</h3>
+        <div class="main">
+        <div id="ourintro" class="fc-slideshow">
+          <ul class="fc-slides">
+						<li><img src="../static/img/us1.png" /></li>
+						<li><img src="../static/img/us2.png" /></li>
+						<li><img src="../static/img/us3.png" /></li>
+						<!-- <li><img src="../static/img/4.jpg" /></li>
+						<li><img src="../static/img/5.jpg" /></li>
+						<li><img src="../static/img/6.jpg" /></li>
+						<li><img src="../static/img/7.jpg" /></li>
+						<li><img src="../static/img/8.jpg" /></li> -->
+					</ul>
+        </div>
+      </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    		<script src="../static/js/jquery.flipshow.js"></script>
+    		<script>
+    			$( function() {
+
+    				$( '#ourintro' ).flipshow();
+
+    			} );
+    		</script>
+
+
+
+    {% endblock %}

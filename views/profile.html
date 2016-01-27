@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+  {% block bodyinfo%}
+    <body id="profile">
+  {% endblock %}
+
+  {% block content%}
+
+        <div id="profilephoto"><img src="{{photo}}"></div>
+        <h3>{{firstname}} {{lastname}}</h3>
+        <section id="profileinfo">
+          <div class="container">
+            <div class="row">
+          			<div class="profilecontent">
+                  <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Age:</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{age}}</span>
+          			</div>
+                <div class="profilecontent">
+                  <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Gender:</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{gender}}</span>
+          			</div>
+                <div class="profilecontent">
+                  <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Country:</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{country}}</span>
+          			</div>
+                <div class="profilecontent">
+                  <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Relationship Status:</span>
+                  <span class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{status}}</span>
+          			</div>
+                <div class="profilecontent">
+                  <span class="profilelabel col-xs-6 col-sm-6 col-md-6 col-lg-6">Self-introduction:</span>
+                  <span id="profileselfintro" class="labelfor col-xs-6 col-sm-6 col-md-6 col-lg-6">{{intro}}</span>
+          			</div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="profileform"
+        {% if name == "profile" %}
+          class="hidden"
+        {% endif %}>
+          <form action='/sendemailto{{email}}from{{emailme}}by{{firstnameme}}' method = 'post'>
+        			<fieldset>
+        				<legend>Leave a message</legend>
+                  <div class="container" id="profilecontainer">
+                    <div class="row">
+                      {{ form.subject.label (class="col-xs-12 col-sm-12 col-md-12 col-lg-12")}}
+					            {{ form.subject (placeholder="Hi", class="col-xs-12 col-sm-12 col-md-12 col-lg-12 textinput")}}
+
+					            {{ form.message.label (class="col-xs-12 col-sm-12 col-md-12 col-lg-12")}}
+					            {{ form.message (placeholder="I am Donna.", class="col-xs-12 col-sm-12 col-md-12 col-lg-12 textinput")}}
+
+
+
+          						<!--<label for='profilesubject' class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Subject:</label>-->
+          						<!--<input type='text' id = 'profilesubject' name = 'profilesubject' placeholder="Hi" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 textinput"><br/>-->
+          						<!--<label for='profilemessage' class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Message:</label>-->
+          						<!--<textarea type='text' id='profilemessage' name = 'profilemessage' placeholder="I am Donna." class="col-xs-12 col-sm-12 col-md-12 col-lg-12 textinput"></textarea><br/>-->
+                    <!---->
+                    </div>
+                  </div>
+
+                  <div id="profilebutton"><input type = 'submit' id="profilesubmit" value="SEND"></div>
+        			</fieldset>
+        	</form>
+        </section>
+    {% endblock %}

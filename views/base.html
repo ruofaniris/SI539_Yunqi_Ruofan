@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{title}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!--Fonts-->
+      	<link rel="stylesheet" href="../static/font/font-awesome-4.1.0/css/font-awesome.min.css">
+      	<link rel="stylesheet" href="../static/font/open-sans/stylesheet.css">
+
+        <!--Site Logo-->
+      	<link rel="icon" href="../static/img/logo.png" type="image/x-icon" >
+      	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo.png">
+      	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo.png">
+      	<link rel="apple-touch-icon-precomposed" href="img/logo.png">
+
+        <!-- Bootstrap Latest compiled and minified CSS -->
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- come with skrollr -->
+        <link rel="stylesheet" href="../static/css/normalize.css">
+        <!-- css3set -->
+        <link rel="stylesheet" type="text/css" href="../static/css/component.css" />
+    		<!-- personalstylesheet -->
+        <link rel="stylesheet" href="../static/css/main.css">
+
+
+        <!-- JavaScript -->
+        <!-- come with skrollr -->
+        <script src="../static/js/vendor/modernizr-2.7.1.min.js"></script>
+        <!-- css3set -->
+        <script src="../static/js/modernizr.custom.js"></script>
+        <!-- bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    </head>
+
+    {% block bodyinfo %}
+      <body id="encounter" class="themetwo">
+    {% endblock %}
+
+
+        {% include "header.html" %}
+
+          {% block content %}
+
+          {% endblock %}
+
+        {% include "footer.html" %}
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../static/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../static/js/imagesloaded.js"></script>
+        <script src="../static/js/skrollr.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+        <script src="../static/js/_main.js"></script>
+
+        <script src="../static/js/jquery.flipshow.js"></script>
+
+        
+        <script type="text/javascript">
+          function checkpw(){
+            pw = document.getElementById("signuppassword").value;
+            repw = document.getElementById("signuprepassword").value;
+            if (repw != pw){
+              document.getElementById("errormessage").innerHTML = "Please repeat your password.";
+              document.getElementById("signuprepassword").style.backgroundColor = "rgba(240,2,99,0.8)";
+            }
+            else{
+              document.getElementById("errormessage").innerHTML = "";
+              document.getElementById("signuprepassword").style.backgroundColor = "white";
+            }
+          }
+        </script>
+
+    </body>
+</html>
